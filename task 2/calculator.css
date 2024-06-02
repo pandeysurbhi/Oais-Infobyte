@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+}
+#cover{
+   padding: 30px;;
+    height :85vh;
+    width: 35vw;
+    margin: auto;
+    border-radius: 29px;
+    background-color: rgb(87, 87, 87);
+}
+#screen{
+    margin:20px;
+   
+    border-top: 4px solid black;
+    border-left:4px solid black;
+    width: 90%;
+    font-size:40px;
+    font-weight: 400;
+    height:80px;
+    padding: 10px;
+    background-color:rgb(157 251 157);
+
+}
+.button{
+  display: flex;
+  flex-wrap: wrap;
+ padding: 20px;
+  
+  justify-content: space-between;
+
+}
+.btn{
+    height: 68px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6); 
+    border-bottom: 2px solid black;
+    width: 85px;
+    margin:10px;
+
+}
