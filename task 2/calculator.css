@@ -38,5 +38,16 @@
     border-bottom: 2px solid black;
     width: 85px;
     margin:10px;
+    font-size: 20px;
+    font-weight: 300;
 
+}
+.btn:active{
+    box-shadow: 0 -3 -3 -3 solid rgb(112, 111, 111);
+}
+.extra{
+    background-color: rgb(111, 190, 226);
+}
+.symbol{
+    background-color: rgb(214, 105, 105);
 }
