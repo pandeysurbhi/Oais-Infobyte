@@ -10,28 +10,73 @@
     <div id="cover">
     <input type="text" id="screen">
      <div class="button">
-       <button class="btn extra">AC</button>
-       <button class="btn extra">+M</button>
-       <button class="btn extra">-M</button>
-       <button class="btn extra">CLR</button>
-       <button class="btn">9</button>
-       <button class="btn">8</button>
-       <button class="btn">7</button>
-       <button class="btn symbol">+</button>
-       <button class="btn">6</button>
-       <button class="btn">5</button>
-       <button class="btn">4</button>
-       <button class="btn symbol">-</button>
-       <button class="btn">2</button>
-       <button class="btn">1</button>
-       <button class="btn">0</button>
-       <button class="btn symbol">*</button>
-       <button class="btn">(</button>
-       <button class="btn">.</button>
-       <button class="btn">)</button>
-       <button class="btn symbol">/</button>
+       <button class="btn extra" onclick="current_value = '' ;
+       document.querySelector('#screen').value=current_value;"> AC</button>
+
+       <button class="btn extra" onclick="current_value = -current_value;
+        document.querySelector('#screen').value=current_value;">+/- M</button>
+
+       <button class="btn extra" onclick="current_value = current_value.slice(0,-1);
+       document.querySelector('#screen').value=current_value;">X</button>
+
+       <button class="btn symbol" onclick=" let result= eval(current_value);
+       document.querySelector('#screen').value=result;
+       ">=</button>
+
+       <button class="btn" onclick="current_value= current_value + '9' 
+       document.querySelector('#screen').value=current_value;">9</button>
+
+       <button class="btn" onclick="current_value= current_value + '8' 
+       document.querySelector('#screen').value=current_value;">8</button>
+
+       <button class="btn" onclick="current_value= current_value + '7' 
+       document.querySelector('#screen').value=current_value;">7</button>
+
+       <button class="btn symbol" onclick="current_value= current_value + '+' 
+       document.querySelector('#screen').value=current_value;">+</button>
+
+       <button class="btn" onclick="current_value= current_value + '6' 
+       document.querySelector('#screen').value=current_value;">6</button>
+
+       <button class="btn" onclick="current_value= current_value + '5' 
+       document.querySelector('#screen').value=current_value;">5</button>
+
+       <button class="btn" onclick="current_value= current_value + '4' 
+       document.querySelector('#screen').value=current_value;">4</button>
+
+       <button class="btn symbol" onclick="current_value= current_value + '-' 
+       document.querySelector('#screen').value=current_value;">-</button>
+
+       <button class="btn" onclick="current_value= current_value + '2' 
+       document.querySelector('#screen').value=current_value;">2</button>
+
+       <button class="btn" onclick="current_value= current_value + '1' 
+       document.querySelector('#screen').value=current_value;">1</button>
+
+       <button class="btn" onclick="current_value= current_value + '0' 
+       document.querySelector('#screen').value=current_value;">0</button>
+
+       <button class="btn symbol" onclick="current_value= current_value + '*' 
+       document.querySelector('#screen').value=current_value;">*</button>
+       <button class="btn" onclick="current_value= current_value + '(' 
+       document.querySelector('#screen').value=current_value;">(</button>
+
+       <button class="btn" onclick="current_value= current_value + '.' 
+       document.querySelector('#screen').value=current_value;">.</button>
+
+       <button class="btn" onclick="current_value= current_value + ')' 
+       document.querySelector('#screen').value=current_value;">)</button>
+
+       <button class="btn symbol" onclick="current_value= current_value + '/' 
+       document.querySelector('#screen').value=current_value;">/</button>
        
      </div>
     </div>
+
+<script>
+  let current_value='';
+  document.querySelector('#screen').value=current_value;
+
+</script>    
 </body>
 </html>
