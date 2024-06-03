@@ -6,10 +6,10 @@
 #cover{
    padding: 30px;;
     height :85vh;
-    width: 35vw;
+    width: 30vw;
     margin: auto;
     border-radius: 29px;
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(102, 101, 101);
 }
 #screen{
     margin:20px;
@@ -27,8 +27,7 @@
 .button{
   display: flex;
   flex-wrap: wrap;
- padding: 20px;
-  
+  padding: 20px;
   justify-content: space-between;
 
 }
@@ -43,11 +42,21 @@
 
 }
 .btn:active{
-    box-shadow: 0 -3 -3 -3 solid rgb(112, 111, 111);
+   background-color: rgb(203, 203, 197);
 }
 .extra{
     background-color: rgb(111, 190, 226);
 }
+.extra:active{
+    background-color: rgb(163, 216, 241);;
+}
 .symbol{
     background-color: rgb(214, 105, 105);
+}
+.symbol:active{
+    background-color: rgb(239, 135, 135);
+} 
+
+#cover{
+    box-shadow: 4px 4px black; 
 }
